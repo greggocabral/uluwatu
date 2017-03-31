@@ -16,13 +16,14 @@ background-attachment: fixed;
 	font-size: 80px;
 }
 
-.navbar-brand-custom {
+.navbar-brand-custom,
+.navbar-brand-custom:active,
+.navbar-brand-custom:focus{
   font-size:42px;
   color: #222;
   text-decoration: none;
   padding-left: 10px;
 }
-
 
 #mainNav {
   border-width: 0px;
@@ -51,11 +52,60 @@ background-attachment: fixed;
     border-top: 3px solid;
 }
 
+.text-color-white{
+  color:white;
+
+}
+
+.bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.6s infinite linear;
+  -o-animation: bounce 0.6s infinite linear;
+  -webkit-animation: bounce 0.6s infinite linear;
+  animation: bounce 0.6s infinite linear;
+  colr:000;
+}
+
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+
+
 /*For small screens: -----------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 380px) {
   .background-img{
   background-image:url(../img/header-mobile.jpg);
   }
+
+
   
 
 
@@ -63,17 +113,11 @@ background-attachment: fixed;
 }
 
 /*For mobile phones: -----------------------------------------------------------------------------------------------------*/
-@media only screen and (min-width: 700px) and (max-width: 1060px) {
+@media only screen and (min-width: 380px) and (max-width: 1060px) {
 
   .background-img{
   background-image:url(../img/header.jpg);
   }
-
-
-
-
-
-
 
 
 }
@@ -87,3 +131,28 @@ background-attachment: fixed;
 	}
    
 }
+
+
+
+/*for landscape mode*/
+@media only screen and (max-height: 400px) {
+  .push-down{
+    margin-top: 8vh;
+  }
+}
+
+/*for landscape mode*/
+@media only screen and (min-height: 400px) and  (max-width: 380px){
+  .push-down{
+    margin-top: 60vh;
+  }
+}
+
+/*for landscape mode*/
+@media only screen and (min-height: 400px) and  (min-width: 380px){
+  .push-down{
+    margin-top: 40vh;
+  }
+}
+
+
