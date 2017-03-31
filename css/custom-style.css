@@ -14,7 +14,6 @@ background-attachment: fixed;
 
 .huge-font-custom {
 	font-size: 80px;
-  height: 170px !important;
 }
 
 .navbar-brand-custom,
@@ -147,6 +146,8 @@ background-attachment: fixed;
   .push-down{
     margin-top: 50vh;
   }
+
+  
 }
 
 /*for landscape mode*/
