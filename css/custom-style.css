@@ -14,6 +14,7 @@ background-attachment: fixed;
 
 .huge-font-custom {
 	font-size: 80px;
+  height: 170px !important;
 }
 
 .navbar-brand-custom,
@@ -137,21 +138,21 @@ background-attachment: fixed;
 /*for landscape mode*/
 @media only screen and (max-height: 400px) {
   .push-down{
-    margin-top: 8vh;
+    margin-top: 2vh;
   }
 }
 
 /*for landscape mode*/
 @media only screen and (min-height: 400px) and  (max-width: 380px){
   .push-down{
-    margin-top: 60vh;
+    margin-top: 50vh;
   }
 }
 
 /*for landscape mode*/
 @media only screen and (min-height: 400px) and  (min-width: 380px){
   .push-down{
-    margin-top: 40vh;
+    margin-top: 30vh;
   }
 }
 

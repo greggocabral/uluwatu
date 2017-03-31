@@ -152,7 +152,7 @@ header {
 header .header-content {
   position: relative;
   text-align: center;
-  padding: 4vh 15px 100px;
+  padding: 2vh 15px 100px;
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
