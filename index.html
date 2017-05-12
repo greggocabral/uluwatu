@@ -6,10 +6,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Uluwatu Craft Objetos de Diseño">
+    <meta name="author" content="gregoriocabral.me">
 
     <title>Uluwatu</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -151,9 +153,9 @@
         </div>
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                <div id="mesa-seminyak" class="col-lg-4 col-sm-6 product">
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/mesa-seminyak.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -164,41 +166,11 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Mesa
-                                </div>
-                                <div class="project-name">
-                                    Old Man's
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Mesa
-                                </div>
-                                <div class="project-name">
-                                    Broken Head
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                <div id="mesa-tamarama" class="col-lg-4 col-sm-6 product">
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/mesa-tamarama.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -209,23 +181,54 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                 <div id="banco-brokenhead" class="col-lg-4 col-sm-6 product">
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/banco-brokenhead.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Mesa
+                                    Banco
                                 </div>
                                 <div class="project-name">
-                                    Bronte
+                                    Broken Head
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
+                <div id="banco-seminyak" class="col-lg-4 col-sm-6 product">
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/banco-seminyak.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Banco
+                                </div>
+                                <div class="project-name">
+                                    Seminyak
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="banco-doble-seminyak" class="col-lg-4 col-sm-6 product">
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/banco-largo-seminyak.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Banco doble
+                                </div>
+                                <div class="project-name">
+                                    Seminyak
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -266,6 +269,29 @@
         </div>
     </section>
 
+    <div class="product-panel">
+        <div class="row">
+            <div class="symbol-close link">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2 id='product-title'></h2>
+            </div> 
+        </div>
+        <div class="row">
+            <div id='img-col' class='col-xs-10 col-xs-offset-1'> 
+            </div>
+        </div>
+        <div class="row">
+            <div class='col-xs-10 col-xs-offset-1 text-center'> 
+                <p><h4 class="mt-20" id='product-description'></h4></p>     
+                <p><h3 id='product-link'> </h3></p>  
+            </div>
+        </div>
+    </div>   
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -276,6 +302,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/scripts.js"></script>
+    <script src="js/data.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>

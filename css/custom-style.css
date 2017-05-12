@@ -16,6 +16,10 @@ background-attachment: fixed;
 	font-size: 80px;
 }
 
+.mt-20{
+  margin-top: 20px;
+}
+
 .navbar-brand-custom,
 .navbar-brand-custom:active,
 .navbar-brand-custom:focus{
@@ -56,6 +60,52 @@ background-attachment: fixed;
   color:white;
 
 }
+
+.product-panel{
+  position: absolute;
+  z-index: 1000000;
+  top: 0px;
+  left: 0px;
+  min-height: 500%;
+  width: 100%;
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.product-img{
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+.animate-show {
+  line-height: 20px;
+  opacity: 1;
+  padding: 10px;
+  border: 1px solid black;
+  background: white;
+}
+
+.animate-show.ng-hide-add, .animate-show.ng-hide-remove {
+  transition: all linear 0.5s;
+}
+
+.animate-show.ng-hide {
+  line-height: 0;
+  opacity: 0;
+  padding: 0 10px;
+}
+
+ .symbol-close{
+    float: right;
+    font-size: 7vh;
+    padding-left: 20px;
+    margin-right: 10px;
+
+ }
 
 .bounce {
   display: inline-block;
